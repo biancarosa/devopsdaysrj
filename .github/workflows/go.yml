@@ -26,3 +26,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+      
+    - name: Download load test
+      run: wget https://github.com/biancarosa/devopsdaysrj/releases/download/v1/devopsdays
+      
+    - name: Run load test
+      run: ./devopsdays
